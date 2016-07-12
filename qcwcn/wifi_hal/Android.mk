@@ -21,7 +21,7 @@ include $(CLEAR_VARS)
 LOCAL_REQUIRED_MODULES :=
 
 LOCAL_CFLAGS += -Wno-unused-parameter -Wno-int-to-pointer-cast
-LOCAL_CFLAGS += -Wno-maybe-uninitialized -Wno-parentheses -DNAN_2_0
+LOCAL_CFLAGS += -Wno-maybe-uninitialized -Wno-parentheses
 LOCAL_CPPFLAGS += -Wno-conversion-null
 
 LOCAL_C_INCLUDES += \
@@ -56,7 +56,7 @@ LOCAL_SRC_FILES := \
 	rssi_monitor.cpp
 
 LOCAL_MODULE := libwifi-hal-qcom
-LOCAL_CLANG := false
+LOCAL_CLANG := true
 LOCAL_SHARED_LIBRARIES += libnetutils liblog
 LOCAL_SHARED_LIBRARIES += libdl
 
@@ -75,7 +75,7 @@ include $(CLEAR_VARS)
 LOCAL_REQUIRED_MODULES :=
 
 LOCAL_CFLAGS += -Wno-unused-parameter -Wno-int-to-pointer-cast
-LOCAL_CFLAGS += -Wno-maybe-uninitialized -Wno-parentheses -DNAN_2_0
+LOCAL_CFLAGS += -Wno-maybe-uninitialized -Wno-parentheses
 LOCAL_CPPFLAGS += -Wno-conversion-null
 
 LOCAL_C_INCLUDES += \
@@ -110,7 +110,7 @@ LOCAL_SRC_FILES := \
 	rssi_monitor.cpp
 
 LOCAL_MODULE := libwifi-hal-qcom
-LOCAL_CLANG := false
+LOCAL_CLANG := true
 LOCAL_SHARED_LIBRARIES += libnetutils liblog
 LOCAL_SHARED_LIBRARIES += libdl libhardware_legacy
 
